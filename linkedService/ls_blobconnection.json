@@ -1,6 +1,5 @@
 {
 	"name": "ls_blobconnection",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureBlobStorage",
@@ -11,8 +10,10 @@
 					"referenceName": "ls_keyvaultconnection",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "BlobConnectionString"
+				"secretName": "BlobConnectionString-dev",
+				"secretVersion": ""
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
