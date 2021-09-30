@@ -7,9 +7,29 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "covidreportproject-dev-adf"
 		},
+		"blobconnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'blobconnection'"
+		},
+		"gen2connection_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'gen2connection'"
+		},
+		"ls_ADLSConnection_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_ADLSConnection'"
+		},
+		"gen2connection_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://covidreportadlsgen2.dfs.core.windows.net"
+		},
+		"ls_ADLSConnection_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://covidreportnew8amgen2.dfs.core.windows.net"
+		},
 		"ls_blobconnection_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
-			"defaultValue": "BlobConnectionString"
+			"defaultValue": "BlobConnectionString-dev"
 		},
 		"ls_keyvaultconnection_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -41,6 +61,21 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"blobconnection_connectionString": {
+						"value": "[parameters('blobconnection_connectionString')]"
+					},
+					"gen2connection_accountKey": {
+						"value": "[parameters('gen2connection_accountKey')]"
+					},
+					"ls_ADLSConnection_accountKey": {
+						"value": "[parameters('ls_ADLSConnection_accountKey')]"
+					},
+					"gen2connection_properties_typeProperties_url": {
+						"value": "[parameters('gen2connection_properties_typeProperties_url')]"
+					},
+					"ls_ADLSConnection_properties_typeProperties_url": {
+						"value": "[parameters('ls_ADLSConnection_properties_typeProperties_url')]"
 					},
 					"ls_keyvaultconnection_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ls_keyvaultconnection_properties_typeProperties_baseUrl')]"
