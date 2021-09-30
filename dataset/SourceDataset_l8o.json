@@ -2,7 +2,7 @@
 	"name": "SourceDataset_l8o",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "blobconnection",
+			"referenceName": "ls_blobconnection",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
