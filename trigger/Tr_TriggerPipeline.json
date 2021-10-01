@@ -1,0 +1,17 @@
+{
+	"name": "Tr_TriggerPipeline",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2021-10-01T03:10:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
